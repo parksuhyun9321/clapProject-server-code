@@ -1,7 +1,7 @@
 ## clapProject-server
 
 * 모든 데이터는 시크릿 키를 사용 aes 방식으로 암호화 후 백엔드와 프론트 에서 각각 복호화 후 처리 함
-* 클라이언트 페이지에서 는 headers 에 key : 클라이언트 키, 관리자 페이지에서는 auth : base64 문자열로 압축 변환 된 토큰 객체 { a : accessToken, r : refreshToken } 를 담아 api 통신
+* 클라이언트 페이지에서 는 headers 에 key : 유저 클라이언트 키, 관리자 페이지에서는 auth : base64 문자열로 압축 변환 된 토큰 객체 { a : accessToken, r : refreshToken } 를 담아 api 통신
 * contents 폴더에서 유저의 프로필 이미지, 프로젝트 이미지, 첨부 파일 저장
 * 운영 서버에서는 gulp를 돌려 난독화 된 파일을 import
 
