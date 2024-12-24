@@ -1,0 +1,1 @@
+let{AES,enc}=require("crypto-js");function dataEncrypt(t){return AES.encrypt(JSON.stringify(t),process.env.REACT_APP_SECRET_KEY).toString()}function dataDecrypt(t){t=AES.decrypt(t,process.env.REACT_APP_SECRET_KEY);return JSON.parse(t.toString(enc.Utf8))}module.exports={dataDecrypt:dataDecrypt,dataEncrypt:dataEncrypt};// build date : 2024. 12. 23. 오후 10:15:20
